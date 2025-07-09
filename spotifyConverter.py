@@ -75,7 +75,7 @@ def extract_songs_from_text(raw_text):
     return songs
 
 def main():
-    input_file = "raw_playlist4.txt"
+    input_file = "raw_playlist.txt"
     with open(input_file, 'r', encoding='utf-8') as f:
         raw_text = f.read()
     
@@ -83,7 +83,7 @@ def main():
     print(f"Extracted {len(songs)} songs.")
 
     user_id = sp.me()['id']
-    playlist = sp.user_playlist_create(user_id, name="good vibe pop songs", public = True)
+    playlist = sp.user_playlist_create(user_id, name="New York vibe", public = True)
     playlist_id = playlist['id']
     print(f"Created Playlist: {playlist['external_urls']['spotify']}")
 

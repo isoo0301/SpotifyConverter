@@ -13,7 +13,7 @@ Requirements
 - python-dotenv (pipi install python-dotenv)
 - A Spotify Developer account with an app created (to get CLIENT_ID, CLIENT_SECRET, and SET_REDIRECT_URI)
 
-SETUP
+Setup
 1. Clone the repository
 2. Create an activate your Python virtual environment
 3. Install dependencies
@@ -24,7 +24,8 @@ SETUP
 5. Add your raw playlist text to a file like raw_playlist.txt.
    raw_playlist without artist has low accuracy.
 
-USAGE
+Usage
+
 Run the script with: python spotifyConverter.py
 - It reads your raw playlist text file.
 - Extract and clean song titles and artists.
